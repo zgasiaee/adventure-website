@@ -1,0 +1,101 @@
+.footerContainer{
+    min-height: 500px;
+    background-color: #201f20;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+.input{
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+.input:focus{
+    outline: none;
+}
+.submit{
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.column h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.column h1{
+    text-align: center;
+}
+.column span{
+    padding: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.column p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.iconBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin-bottom: 15px ;
+}
+.itemsContainer {
+    display: flex;
+  }
+  .itemsContainer i {
+    font-size: 1.2rem;
+    padding: 5px 12px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+  }
+  .iconContainer h3 {
+    font-size: 1.5rem;
+  }
+  .iconContainer i {
+    margin-left: 10px;
+    font-size: 1.3rem;
+  }
+  @media screen and (max-width: 800px) {
+    .column h1{
+        font-size: 1.5rem;
+    }
+    .iconBar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .iconContainer{
+        margin-bottom: 20px;
+    }
+    .row{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+  }
+  

@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route , Routes , Navigate } from "react-router-dom";
+
+//componet
+import DetailCard from './component/DetailCard'
+import Landing from "./component/Landing";
+import Navbar from "./component/Navbar";
+import Cards from "./component/Cards";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div >
+      <Navbar/>
+      <Routes>
+          <Route path="/card/:id" element={<DetailCard/>} />
+          <Route path="/services" element={<Cards/>} />
+          <Route path="/" element={<Landing/>} /> 
+          <Route path="/*" element={<Navigate to='/' />}/>
+      </Routes>
+   </div>
   );
 }
 
